@@ -1,0 +1,123 @@
+####
+GET http://localhost:4040/users/profile/:userId
+
+
+
+
+
+####
+POST http://localhost:4040/posts/create HTTP/1.1
+Content-Type: application/json
+
+{
+    "image": "img.jpg",
+    "title":"ciao",
+    "description": "questo è il secondo post",
+    "author":"653d0f08ac5fc08f17d0e93d"
+}
+
+
+
+####
+POST http://localhost:4040/users/profileData
+
+
+####
+DELETE  http://localhost:4040/posts/delete/653d025b8c2d9e605d5ec8e9
+
+
+
+####
+GET http://localhost:4040/users
+
+
+
+
+####
+POST  http://localhost:4040/users/add
+Content-Type: application/json
+
+{
+    "userName":"betta1997",
+    "email":"ciao@1998.it",
+    "password":"porcarelli"
+}
+
+
+
+####
+PATCH http://localhost:4040/posts/update/6547ce10576adbc9c426a6e0
+Content-Type: application/json
+
+{
+
+    "content":"Ristorante il prato! è il mio!"
+
+}
+
+
+
+####
+
+DELETE  http://localhost:4040/users/del/653d0c560fd00e53858efc48
+
+
+
+
+####
+GET http://localhost:4040/comment/6547cefb576adbc9c426a700
+
+
+
+
+####
+POST http://localhost:4040/comment/create/6547cefb576adbc9c426a700
+Content-Type: application/json
+
+
+{
+    "comments":"ciao cccccccccc"
+}
+
+
+####
+POST  http://localhost:4040/comment/create
+Content-Type: application/json
+
+{
+    "comments":"commento per vedere se funziona"
+}
+
+
+
+####
+PATCH  http://localhost:4040/comment/update/653d273d3a556696cd07fa4f
+Content-Type: application/json
+
+{
+    "comments":"ciao con modifiche"
+}
+
+
+
+
+####
+DELETE http://localhost:4040/comment/delete/653d273d3a556696cd07fa4f
+
+
+
+
+####
+GET http://localhost:4040/users/profile/:userId
+
+
+####
+
+PATCH http://localhost:4040/posts/update/6547ce10576adbc9c426a6e0
+Content-Type: application/json
+
+{
+
+    "content":"Ristorante il prato! è il mio!"
+
+}
